@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> My Portfolio</title>
+	<meta charset="utf-8">
+    <meta name="description" content="My Portfolio personnel website">
+    <meta name="keywords" content="personal website, html5, css3, javascript,one page, bootstrap">
+    <meta name="author" content="Yousra Achouri">
+	<link rel="stylesheet" type="text/css" href="tuch.css">
+    <link rel="stylesheet" type="text/css" href="fonts/css/all.css">
+    <link rel="stylesheet" href="fonts/font-awesome.min.css">
+</head>
+<body>
+	<!-- navigation-->
+<div class="navbar" id="myTopnav">
+			
+		<ul>
+			<li> <a class="active" href="#home"> <i class="fa fa-fw fa-home"></i> HOME</a></li>
+            <li> <a href="#about"><i class="fa fa-fw fa-user"></i> ABOUT</a> </li>
+			<li> <a href="#skills"><i class="fa fa-fw fa-code"></i> SKILLS</a> </li>
+			<li> <a href="#contact"><i class="fa fa-fw fa-envelope"></i> CONTACT </a></li>
+            <li> <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a></li>
+        </ul>
+</div>
+
+
+<!-- home  -->
+	<div class= "d1" id="home">
+		<div class="info" align="left">
+            <h1>I am <span>Yousra Achouri</span> I'm a computer teacher.</h1>
+            <h1>Building websites is my passion.</h1>
+            <p>Welcome to my officail Portfolio Website Where I put all <br> my works and many more.</p>
+        </div>
+		<div class="lien" align="right">
+			<a href="#about">Let Get Started</a>
+		</div>
+	</div>
+<!-- About me -->
+
+    <div class="d2" id="about">
+       
+    	 <div class="me-img">
+            <img src="img/me.jpg" alt="me">
+            <p>
+                    Hi there visitor. Based in Tunisia, I'm currently a freelance developer, kind of new to the industry but paving my way through
+                    progressively by hard work and creativity.<br> From the design to the development without omitting the maintenance and frequent updates, you can rest assured to get what you want.
+
+              </p>
+    	 </div>
+                 
+        
+    </div>
+<!-- Skills -->
+    <div class="d3" id="skills">
+       <div class="sk">
+    	<div class="htm">
+    		HTML5 <br> <progress id="ht" value="9" max="10" ></progress>
+    	</div>
+    	<div class= "Css">
+    		CSS3  <br> <progress id="cs" value="8" max="10"></progress>
+    	</div>
+    	<div class= "JS">
+    		JavaScript <br> <progress id="jsc" value="7" max="10"></progress>
+    	</div>
+       </div>
+    </div>
+ <!-- contact -->
+    <div class="d4" id="contact">
+    	<div class="tn3"> <h3> Tell us something</h3> </div>
+        <div class="contact-box">
+        
+         <form action="mailto:achouriyousra27@gmail.com" method="post" enctype="text/plain" class="fr">
+            
+            <input type="text" name="First Name" class="in" id="fn" placeholder="Enter Your Name">
+            <br>
+            <br>
+            <input type="email" name="email" class="in" required placeholder="Enter Your Email">
+            <br>
+            <br>
+                     
+            <textarea name="description" class="mess" rows="3" cols="70" placeholder="Enter Your Message"></textarea>
+            <br>
+            <br>
+               
+            <button type="submit" class="btn btn-outline-dark" text-align="center"> Send </button>
+          </form>
+        </div>
+    </div>
+  <div class ="foot"> 
+        <ul class="social">
+            <li><a href="https://www.facebook.com/yousra.achouri.52"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="#"><i class="fab fa-github-square"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/aziz-ptit-artiste-835657217"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+  </div>
+  <script type="text/javascript">
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+     var x = document.getElementById("myTopnav");
+     if (x.className === "topnav") {
+         x.className += " responsive";
+      } else {
+           x.className = "topnav";
+             }
+    }
+    function f() 
+    {
+      var t1=document.getElementById('ht');
+        
+        for( i='0';i<='9'; i++)
+         {t1.value=i;         }
+        
+        
+    }
+  </script>
+ </body>
+</html>
